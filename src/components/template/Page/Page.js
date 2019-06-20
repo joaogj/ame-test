@@ -29,10 +29,11 @@ class Page extends React.Component {
   }
 
   handleChangePlanet(id){
+    //randomização de ids para receber dados de planetas aleatoriamente
     id = Math.floor((Math.random() * 61) + 1);
-    axios.get("https://swapi.co/api/planets/" + id)
+    axios.get("https://swapi.co/api/planets/" + id) //requisição
       .then(response => {
-        if(response.data.films.length !== 0 && response.data.climate !== "unknown" && response.data.terrain !== "unknown") {
+        if(response.data.films.length !== 0 && response.data.climate !== "unknown" && response.data.terrain !== "unknown") { //verificando se não há itens vazios ou desconhecidos
           this.setState({planetName: response.data.name})
           this.setState({population: response.data.population})
           this.setState({climate: response.data.climate})
@@ -41,13 +42,13 @@ class Page extends React.Component {
           this.setState({loading: false})
           this.setState({class: "card"})
         }
-        else {
+        else { //recursão para refazer a requisição, caso a anterior não tenha as informações necessárias
           this.handleChangePlanet()
           this.setState({class: "card-hide"})
           this.setState({loading: true})
         }
-        console.log(response.data);
-        console.log(response.data.films)
+        // console.log(response.data);
+        // console.log(response.data.films)
       })
   }
 
