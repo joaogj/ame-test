@@ -1,5 +1,5 @@
 import React from 'react'
-import {formatThousand} from '../../helpers/format'
+import {formatThousand} from '../../../helpers/format'
 
 import {
   MainContainer,
@@ -12,7 +12,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <MainContainer>
+      <MainContainer className={this.props.className}>
         <TitleContainer>
           <h1>{this.props.planetName}</h1>
         </TitleContainer>

@@ -13,26 +13,21 @@ code {
 }
 @font-face 
 {
-  font-family: "StarJedi";
-  src: url("../src/fonts/STARJEDI.TTF");
+  font-family: "Star Jedi";
+  src: url("/fonts/STARJEDI.TTF");
 }
 @font-face 
 {
   font-family: "Star Jhol";
-  src: url("../src/fonts/STARJHOL.TTF");
+  src: url("/fonts/STARJHOL.TTF");
 }
 @font-face 
 {
   font-family: "Star Jout";
-  src: url("../src/fonts/STARJOUT.TTF");
+  src: url("/fonts/STARJOUT.TTF");
 }
 @font-face 
 {
   font-family: "Star Jedise";
-  src: url("../src/fonts/STJEDISE.TTF");
-}
-@font-face 
-{
-  font-family: "StarJedi";
-  src: url("../src/fonts/STARJEDI.TTF");
+  src: url("/fonts/STJEDISE.TTF");
 }

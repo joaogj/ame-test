@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
   border: 1px solid black;
   border-radius: 2px;
   background-color: yellow;
+  margin-top: 15px;
   &:hover {
     opacity: 0.9;
     cursor: pointer;

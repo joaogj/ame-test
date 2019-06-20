@@ -8,6 +8,7 @@ export const MainContainer = styled.div`
   height: 300px;
   border: 1px solid yellow;
   margin-top: 70px;
+  border-radius: 6px;
 `
 export const TitleContainer = styled.div`
   text-align: center;
