@@ -9,8 +9,12 @@ export const MainContainer = styled.div`
   border: 1px solid black;
   border-radius: 2px;
   background-color: yellow;
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
 `
 export const TextButton = styled.span`
-  font-family: "StarJedi";
+  font-family: "Star Jedi";
   font-size: 14px;
 `

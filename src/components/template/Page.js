@@ -13,7 +13,7 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      planetName: "clique aqui",
+      planetName: "",
       population: "",
       climate: "",
       terrain: "",
@@ -22,18 +22,26 @@ class Page extends React.Component {
     this.handleChangePlanet = this.handleChangePlanet.bind(this);
   };
 
+  componentWillMount(){
+    this.handleChangePlanet()
+  }
+
   handleChangePlanet(id){
     id = Math.floor((Math.random() * 61) + 1);
     axios.get("https://swapi.co/api/planets/" + id)
       .then(response => {
-        this.setState({planetName: response.data.name})
-        this.setState({population: response.data.population})
-        this.setState({climate: response.data.climate})
-        this.setState({terrain: response.data.terrain})
-        this.setState({films: response.data.films})
+        if(response.data.films.length != 0 && response.data.climate != "unknown" && response.data.terrain != "unknown") {
+          this.setState({planetName: response.data.name})
+          this.setState({population: response.data.population})
+          this.setState({climate: response.data.climate})
+          this.setState({terrain: response.data.terrain})
+          this.setState({films: response.data.films})
+        }
+        else
+          this.handleChangePlanet()
         console.log(response.data);
+        console.log(response.data.films)
       })
-      console.log(id)
   }
 
 

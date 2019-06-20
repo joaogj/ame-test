@@ -1,4 +1,5 @@
 import React from 'react'
+import {formatThousand} from '../../helpers/format'
 
 import {
   MainContainer,
@@ -21,7 +22,7 @@ class Card extends React.Component {
               return (
                 <div key={key}>
                   <CardText>{item.attribute}: </CardText>
-                  <CardText>{this.props.population}</CardText>
+                  <CardText>{formatThousand(this.props.population)}</CardText>
                 </div>
               )
             }

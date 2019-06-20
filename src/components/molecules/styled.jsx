@@ -6,12 +6,12 @@ export const MainContainer = styled.div`
   max-width: 300px;
   width: 100%;
   height: 300px;
-  border: 1px solid #222222;
+  border: 1px solid yellow;
   margin-top: 70px;
 `
 export const TitleContainer = styled.div`
   text-align: center;
-  border-bottom: 1px solid #222222;
+  border-bottom: 1px solid yellow;
   height: 50px;
   display: flex;
   align-items: center;
@@ -19,12 +19,14 @@ export const TitleContainer = styled.div`
 
   h1 {
     font-size: 24px;
-    font-family: "StarJedi";
+    font-family: "Star Jhol";
+    color: yellow;
   }
 `
 export const CardText = styled.span`
-  font-family: "StarJedi";
+  font-family: "Star Jedi";
   text-align: center;
+  color: yellow;
 `
 export const TextsContainer = styled.div`
   display: flex;

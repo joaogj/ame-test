@@ -6,5 +6,10 @@ export const MainContainer = styled.div`
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  height: 440px;
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  height: 100vh;
+  background-image: url("death-star.jpg");
+  opacity: 0.9;
 ` 
