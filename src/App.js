@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import Card from './components/molecules/Card';
 import './App.css';
+import Button from './components/atoms/Button';
+import Page from './components/template/Page';
 
 const Attributes = [
   {
@@ -17,11 +19,7 @@ const Attributes = [
 
 function App() {
   return (
-    <div className="App-container" >
-      <Card planetAttributes={Attributes} >
-
-      </Card>
-    </div>
+      <Page planetAttributes={Attributes} />
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

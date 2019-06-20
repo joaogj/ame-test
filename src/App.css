@@ -34,6 +34,9 @@
 
 .App-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-content: center;
+  align-items: center;
+  height: 440px;
 }
