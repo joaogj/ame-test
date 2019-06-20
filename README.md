@@ -1,6 +1,6 @@
 ## Ame Digital
 
-Landing page desenvolvida para teste de conhecimento no processo seletivo da equipe Bemobi.
+Landing page desenvolvida para teste de conhecimento no processo seletivo da equipe Ame Digital.
 
 ## Tecnologias e metodologias utilizadas
   * React.JS
